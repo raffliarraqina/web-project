@@ -1,0 +1,96 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap");
+
+* {
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+
+/* HEADER */
+
+header {
+  padding: 100px 0 50px 100px;
+  background-color: #f5f5f5;
+}
+
+header h1 {
+  font-size: 36px;
+  font-weight: 600;
+  margin-bottom: 20px;
+  font-family: "Inter", sans-serif;
+}
+
+/* HEADER END */
+
+/* DETAIL AGENDA */
+
+.detail-agenda {
+  justify-content: center;
+  display: flex;
+  align-items: start;
+  flex-direction: column;
+  margin: 150px 100px;
+  padding: 50px;
+  box-shadow: 0 5px 5px #999999;
+  gap: 30px;
+}
+
+.detail-agenda img {
+  width: 100%;
+  height: 500px;
+  object-fit: cover;
+}
+
+.detail-agenda-text h1 {
+  font-size: 48px;
+}
+
+.detail-agenda-text p {
+  font-size: 16px;
+  text-align: justify;
+  line-height: 200%;
+}
+
+/* END DETAIL AGENDA */
+
+@media (max-width: 768px) {
+
+.detail-agenda {
+  padding: 30px;
+  margin: 150px 50px;
+  transition: 0.2s;
+}
+
+}
+
+@media (max-width:430px) {
+
+  .detail-agenda img {
+    width: 100%;
+    height: 200px;
+  }
+
+  .detail-agenda {
+    margin: 150px 0px;
+    padding: 25px;
+    gap: 10px;
+    transition: 0.2s;
+  }
+
+  .detail-agenda-text h1 {
+    font-size: 20px;
+  }
+
+  .detail-agenda-text {
+    padding: 0px;
+  }
+
+  .detail-agenda-text p {
+    font-size: 14px;
+    line-height: 150%;
+  }
+
+}
